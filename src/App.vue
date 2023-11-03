@@ -1,15 +1,22 @@
 <template>
- 
-  <PadreNumero />
+  <div>
+    <MenuComponent/>
+    <hr>
+    <MenuTabla/>
+    <hr>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import PadreNumero from './components/PadreNumero.vue'
+import MenuComponent from './components/MenuComponent.vue';
+import MenuTabla from './components/MenuTabla.vue';
 
 export default {
   name: 'App',
   components: {
-    PadreNumero
+    MenuComponent,
+    MenuTabla
   }
 }
 </script>
